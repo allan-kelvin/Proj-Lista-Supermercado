@@ -1,0 +1,81 @@
+:root{
+    --cor-principal:#5a71bb;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color:var(--cor-principal);
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+.lista-cadastro{
+    display: flex;
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.lista-cadastro input[type=text]{
+    flex: 1;
+    height: 40px;
+    padding-left: 20px;
+    margin: 1px;
+    max-width: 350px;
+    
+}
+
+.lista-cadastro input[type=submit]{
+    background-color: rgba(24, 124, 24, 0.774);
+    color: aliceblue;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 2px;
+}
+.button[name=limpar]{
+    background-color: rgba(219, 42, 42, 0.849);
+    color: aliceblue;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 2px;
+}
+.lista-cadastro input[type=submit]:hover{
+    color: antiquewhite;
+    transition: 1s;
+}
+
+.lista-produto-single{
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    margin: 20px;
+}
+
+.lista-produto-single h3{
+    flex: 1;
+    padding: 0 20px;
+}
+
+.preco-produto{
+    background-color:var(--cor-principal);
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.soma-produto{
+    margin: 20px;
+}
