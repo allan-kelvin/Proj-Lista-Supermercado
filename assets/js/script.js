@@ -5,12 +5,15 @@ document.querySelector('input[type=submit]')
         var nomeProduto = document.querySelector('input[name=nome_produto]');
         var precoProduto =document.querySelector('input[name=valor_produto]');
 
-        items.push({
-            nome:nomeProduto.value,
-            valor:precoProduto.value
-        });
+        if(nomeProduto.value=="" || precoProduto.value==""){
+            alert("Favor Digitar um valor Valido");
+        }else{
+            items.push({
+                nome:nomeProduto.value,
+                valor:precoProduto.value
+            });
+        }
 
-         
          let soma=0;
          let listaprodutos = document.querySelector('.lista-produtos');
          listaprodutos.innerHTML="";
